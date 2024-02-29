@@ -350,6 +350,18 @@
     margin-bottom: 0.5rem;
 }
 
+.skill .pl .extension.ext1 {
+    font-size: 1.375em;
+}
+
+.skill .pl .extension.ext3 {
+    font-size: 0.75em;
+}
+
+.skill .pl .extension.ext4 {
+    font-size: 0.6em;
+}
+
 .skill .list ul {
     color: white;
     columns: 3;
