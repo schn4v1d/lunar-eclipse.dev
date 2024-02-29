@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteBase /sohnemann/lunar-eclipse/
+
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+AddDefaultCharset utf-8
+SetEnv TZ Europe/Berlin
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} ^(?:/[^.]+)|/$
+RewriteRule (.*) index.php?url=$1&%{QUERY_STRING} [L]

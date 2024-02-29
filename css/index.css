@@ -1,0 +1,31 @@
+html, body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #1a1b26;
+}
+
+.nav-header {
+    padding: 0.5rem;
+    border-bottom: 1px solid #3d3e52;
+    color: white;
+    display: flex;
+}
+
+.nav-header a {
+    display: inline-block;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.5rem;
+    line-height: 100%;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: white
+}
+
+.nav-header a.active {
+    background-color: #f8e3ac;
+    color: #1a1b26;
+    font-weight: bold;
+}

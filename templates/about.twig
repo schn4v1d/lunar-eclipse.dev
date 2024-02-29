@@ -1,0 +1,321 @@
+{% extends "base.twig" %}
+
+{% block title %}About{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="css/about.css">
+{% endblock %}
+
+{% block content %}
+    <main class="about">
+        <header>
+            <a href="#cv">CV</a>
+            <a href="#skills">Skills</a>
+            <a href="#languages">Languages</a>
+        </header>
+
+        <section>
+            <ul class="timeline" id="cv">
+                <li class="header left">Education</li>
+
+                <li class="marking left ends" style="grid-row: 3 / 6" aria-hidden="true"></li>
+                <li class="left" style="grid-row: 3 / 5">
+                    <div class="card">
+                        <div class="title">Bachelor of Science: Computer Science</div>
+                        <div class="location">Heinrich-Heine Universität</div>
+                        <div class="location">Düsseldorf, Germany</div>
+                        <div class="timespan">2019 - 2024</div>
+                    </div>
+                </li>
+
+                <li class="marking left ends begins" style="grid-row: 5 / 9" aria-hidden="true"></li>
+                <li class="left" style="grid-row: 5 / 8">
+                    <div class="card">
+                        <div class="title">Abitur</div>
+                        <div class="location">Nelly-Sachs Gymnasium</div>
+                        <div class="location">Neuss, Germany</div>
+                        <div class="timespan">2011 - 2019</div>
+                    </div>
+                </li>
+
+                <li class="header right">Work</li>
+
+                <li class="marking right" style="grid-row: 2 / 5" aria-hidden="true"></li>
+                <li class="right" style="grid-row: 2 / 4">
+                    <div class="card right">
+                        <div class="title">Fullstack Developer</div>
+                        <div class="location">Bitbrew GmbH</div>
+                        <div class="location">Neuss, Germany</div>
+                        <div class="timespan">2023 - Now</div>
+                    </div>
+                </li>
+
+                <li class="marking right begins ends" style="grid-row: 4 / 7" aria-hidden="true"></li>
+                <li class="right" style="grid-row: 4 / 7">
+                    <div class="card">
+                        <div class="title">Minijob as Software Developer</div>
+                        <div class="location">Bitbrew GmbH</div>
+                        <div class="location">Neuss, Germany</div>
+                        <div class="timespan">2018 - 2023</div>
+                    </div>
+                </li>
+
+                <li class="marking right begins ends" style="grid-row: 7" aria-hidden="true"></li>
+                <li class="right" style="grid-row: 7 / 9">
+                    <div class="card">
+                        <div class="title">Internship as Software Developer</div>
+                        <div class="location">METRO digital (then Metro Systems)</div>
+                        <div class="location">Düsseldorf, Germany</div>
+                        <div class="timespan">2017</div>
+                    </div>
+                </li>
+
+                <li class="year"></li>
+                <li class="year"></li>
+                <li class="year left-year">2024</li>
+                <li class="year right-year">2023</li>
+                <li class="year left-year">2019</li>
+                <li class="year right-year">2018</li>
+                <li class="year right-year">2017</li>
+                <li class="year left-year">2011</li>
+            </ul>
+
+            <h2>Details</h2>
+
+            <h3>Fullstack Developer</h3>
+
+            <p>
+                I am currently employed as a fullstack developer at <a href="https://bitbrew.de">Bitbrew GmbH</a>. My
+                work consists mostly of managing and extending existing, large PHP-codebases and developing new,
+                server-side software in rust.
+            </p>
+
+            <h3>B.Sc. Computer Science</h3>
+
+            <p>
+                In 2024, I completed my Bachelor of Science in Computer Science with a focus on "Software Technologies
+                and Programming Languages" at the Heinrich-Heine Universität of Düsseldorf.
+            </p>
+
+            <h3>Minijob</h3>
+
+            <p>
+                To finance my studies I began a minijob at a local software development company. I mostly helped out on
+                smaller projects but was also introduced to working on large PHP-codebases. Here, I was able to show off
+                my ability to learn and grow quickly, which helped solidify my position as part of the team and secured
+                my later position as a fullstack developer.
+            </p>
+
+            <h3>Abitur</h3>
+
+            <p>
+                The <a href="https://en.wikipedia.org/wiki/Abitur" target="_blank">Abitur</a> is the highest attainable
+                qualification for secondary education in Germany. It is roughly
+                comparable to A-levels, the Matura, or the IB Diploma. I reached a final score of 1.3 (with 1.0 being
+                the best and 4.0
+                the worst score). My main subjects were Mathematics, English, Computer Science, and Philosophy.
+            </p>
+
+            <h3>Internship</h3>
+
+            <p>
+                In 2017 I had to undertake a mandatory internship as part of my education, for which I got a spot at
+                (then) Metro Systems. There I learned a lot about professional software development and helped develop
+                the testing software used in an exam for apprentices at the company.
+            </p>
+        </section>
+
+        <section>
+            <h1 id="skills">Skills</h1>
+
+            <div class="skill left">
+                <h2>Programming Languages</h2>
+                <div class="pl">
+                    <a href="https://rust-lang.org" target="_blank">
+                        <span class="extension">.rs</span>
+                        <span>Rust</span>
+                    </a>
+                    <a href="https://isocpp.org" target="_blank">
+                        <span style="font-size: 0.8em" class="extension">.cpp</span>
+                        <span>C++</span>
+                    </a>
+                    <a href="https://kotlinlang.org/" target="_blank">
+                        <span class="extension">.kt</span>
+                        <span>Kotlin</span>
+                    </a>
+                    <a href="https://lisp-lang.org/" target="_blank">
+                        <span style="font-size: 0.6em" class="extension">.lisp</span>
+                        <span>Lisp</span>
+                    </a>
+                    <a href="https://php.net" target="_blank">
+                        <span style="font-size: 0.8em" class="extension">.php</span>
+                        <span>PHP</span>
+                    </a>
+                    <a href="https://www.python.org/" target="_blank">
+                        <span class="extension">.py</span>
+                        <span>Python</span>
+                    </a>
+                    <a href="https://www.java.com/" target="_blank">
+                        <span style="font-size: 0.6em" class="extension">.java</span>
+                        <span>Java</span>
+                    </a>
+                    <a href="https://html.spec.whatwg.org/multipage/" target="_blank">
+                        <span style="font-size: 0.6em" class="extension">.html</span>
+                        <span>HTML</span>
+                    </a>
+                    <a>
+                        <span style="font-size: 0.8em" class="extension">.css</span>
+                        <span>CSS</span>
+                    </a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+                        <span class="extension">.js</span>
+                        <span>Javascript</span>
+                    </a>
+                    <a href="https://www.typescriptlang.org/" target="_blank">
+                        <span class="extension">.ts</span>
+                        <span>Typescript</span>
+                    </a>
+                    <a href="https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/" target="_blank">
+                        <span class="extension">.cs</span>
+                        <span>C#</span>
+                    </a>
+                    <a href="https://fsharp.org/" target="_blank">
+                        <span class="extension">.fs</span>
+                        <span>F#</span>
+                    </a>
+                    <a href="https://www.haskell.org/" target="_blank">
+                        <span class="extension">.hs</span>
+                        <span>Haskell</span>
+                    </a>
+                    <a href="https://ocaml.org/" target="_blank">
+                        <span class="extension">.ml</span>
+                        <span>OCaml</span>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank">
+                        <span style="font-size: 1.3em" class="extension">.c</span>
+                        <span>C</span>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/APL_(programming_language)" target="_blank">
+                        <span style="font-size: 0.8em" class="extension">.apl</span>
+                        <span>APL</span>
+                    </a>
+                    <a href="https://www.scheme.org/" target="_blank">
+                        <span style="font-size: 0.8em" class="extension">.scm</span>
+                        <span>Scheme</span>
+                    </a>
+                    <a href="https://www.swi-prolog.org/" target="_blank">
+                        <span class="extension">.pl</span>
+                        <span>Prolog</span>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/Shell_script" target="_blank">
+                        <span class="extension">.sh</span>
+                        <span>Shell</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="skill right">
+                <h2>Software</h2>
+                <div class="list">
+                    <ul>
+                        <li>Windows</li>
+                        <li>Linux (GUI)</li>
+                        <li>Linux (Server)</li>
+                        <li>VS Code</li>
+                        <li>Visual Studio</li>
+                        <li>CLion</li>
+                        <li>IntelliJ</li>
+                        <li>PhpStorm</li>
+                        <li>Termius</li>
+                        <li>Filezilla</li>
+                        <li>Putty</li>
+                        <li>MS Teams</li>
+                        <li>MS Word</li>
+                        <li>MS Excel</li>
+                        <li>MS Powerpoint</li>
+                        <li>Google Sheets</li>
+                        <li>Google Docs</li>
+                        <li>Notion</li>
+                        <li>Trello</li>
+                        <li>Zoom</li>
+                        <li>Obsidian</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="skill left">
+                <h2>Technologies</h2>
+                <div class="list">
+                    <ul>
+                        <li>React</li>
+                        <li>Next.js</li>
+                        <li>Node.js</li>
+                        <li>JQuery</li>
+                        <li>MySQL</li>
+                        <li>Twig Templates</li>
+                        <li>Smarty Templates</li>
+                        <li>Apache Server</li>
+                        <li>LAMP Stack</li>
+                        <li>Docker</li>
+                        <li>SSH</li>
+                        <li>FTP</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h1 id="languages">Languages</h1>
+            <div class="languages">
+                <h2>Fluent</h2>
+                <h2>Not Fluent</h2>
+                <h2>Basics</h2>
+
+                <ul>
+                    <li><span>German</span><span>Native</span></li>
+                    <li><span>English</span><span>Fluent</span></li>
+                </ul>
+                <ul>
+                    <li>
+                        <span>Mandarin Chinese</span>
+                        <span>A1</span>
+                    </li>
+                    <li>
+                        <span>Japanese</span>
+                        <span>A2</span>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <span>Danish</span>
+                        <span>&lt; A1</span>
+                    </li>
+                    <li>
+                        <span>Finnish</span>
+                        <span>&lt; A1</span>
+                    </li>
+                    <li>
+                        <span>Welsh</span>
+                        <span>&lt; A1</span>
+                    </li>
+                    <li>
+                        <span>Ukrainian</span>
+                        <span>&lt; A1</span>
+                    </li>
+                    <li>
+                        <span>Korean</span>
+                        <span>&lt; A1</span>
+                    </li>
+                    <li>
+                        <span>Mongolian</span>
+                        <span>&lt; A1</span>
+                    </li>
+                    <li>
+                        <span>American Sign Language</span>
+                        <span>&lt; A1</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+{% endblock %}

@@ -1,0 +1,13 @@
+{
+    "name": "lunar-eclipse/website",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "LunarEclipse\\Website\\": "src/",
+            "LunarEclipse\\Website\\Pages\\": "src/pages/"
+        }
+    },
+    "require": {
+        "twig/twig": "^3.8"
+    }
+}
